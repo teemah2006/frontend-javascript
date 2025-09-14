@@ -25,7 +25,7 @@ interface studentConstructor {
   lastName: string;
 }
 
-class StudentClass implements studentConstructor {
+class StudentClass {
     firstName;
     lastName;
 
