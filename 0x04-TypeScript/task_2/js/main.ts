@@ -68,7 +68,7 @@ console.log(executeWork(createEmployee(1000)));
 
 type Subjects = "History" | "Math";
 
-function teachClass(todayClass: Subjects){
+function teachClass(todayClass:Subjects){
     if(todayClass === "Math"){
         return 'Teaching Math'
     } else if(todayClass === "History"){
