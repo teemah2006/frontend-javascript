@@ -2,6 +2,7 @@
 /// <reference path="subjects/Java.ts" />
 /// <reference path="subjects/React.ts" />
 /// <reference path="subjects/Teacher.ts" />
+/// <reference path="subjects/Subject.ts" />
 
 import Teacher = Subjects.Teacher;
 import Cpp = Subjects.Cpp;
@@ -18,7 +19,7 @@ console.log(cpp.getRequirements());
 console.log(cpp.getAvailableTeacher());
 
 console.log('Java');
-java.teacher = cTeacher;
+java.teacher= cTeacher;
 console.log(java.getRequirements());
 console.log(java.getAvailableTeacher());
 
