@@ -1,23 +1,23 @@
 interface Teacher {
   readonly firstName: string;
   readonly lastName: string;
-    fullTimeEmployee: boolean;
-    yearsOfExperience?: number;
-    location: string;
-    [key: string]: any;
+  fullTimeEmployee: boolean;
+  yearsOfExperience?: number;
+  location: string;
+  [key: string]: any;
 }
 
 interface Director extends Teacher {
-    numberOfReports: number;
-} 
+  numberOfReports: number;
+}
 
 interface printTeacherFunction {
-    firstName: string;
-    lastName: string;
+  firstName: string;
+  lastName: string;
 }
 
 function printTeacher({ firstName, lastName }: printTeacherFunction): string {
-    return `${firstName}. ${lastName}`;
+  return `${firstName}. ${lastName}`;
 }
 
 interface studentConstructor {
@@ -26,19 +26,19 @@ interface studentConstructor {
 }
 
 class StudentClass {
-    firstName;
-    lastName;
+  firstName;
+  lastName;
 
-    constructor({firstName, lastName}: studentConstructor) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
+  constructor({ firstName, lastName }: studentConstructor) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
 
-    workOnHomework (): string {
-        return 'Currently working';
-    }
+  workOnHomework(): string {
+    return 'Currently working';
+  }
 
-    displayName (): string{
-      return `${this.firstName}`
-    }
+  displayName(): string {
+    return `${this.firstName}`
+  }
 }
