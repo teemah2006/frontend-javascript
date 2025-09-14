@@ -1,6 +1,9 @@
-export const cpp = new Subjects.Cpp();
-export const react = new Subjects.React();
-export const java = new Subjects.Java();
+import Cpp = Subjects.Cpp;
+import React = Subjects.React;
+import Java = Subjects.Java;
+export const cpp = new Cpp();
+export const react = new React();
+export const java = new Java();
 
 export const cTeacher = { firstName: 'John', lastName: 'Doe', experienceTeachingC: 10 };
 console.log('c++');
